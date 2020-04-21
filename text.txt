@@ -1,1 +1,1 @@
-This is a basic git file
+This is a basic git file which i am using to link jenkins with artifactory

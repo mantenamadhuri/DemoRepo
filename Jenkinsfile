@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build Stage') {
             steps {
-                echo "We are at Building..."
+                echo "We are at Building is in process..."
            
                 echo "Building finished!"
             }

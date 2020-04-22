@@ -1,1 +1,2 @@
 This is a basic git file which i am using to link jenkins with artifactory
+adding text

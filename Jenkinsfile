@@ -24,8 +24,8 @@ pipeline {
     }
     post {
         always {
-            bat "jfrog rt c artifactory-demo --url=http://192.168.33.10:8081/artifactory --user=admin --password=password"
-            bat "jfrog rt u text.txt newfile/build_version_$(get-date -f MM-dd-yyyy)_$(get-date -f HH:mm:ss)/"
+            powershell 'jfrog rt c my_server --url=http://localhost:8081/artifactory --user=admin --password=password'
+            powershell 'jfrog rt u text.txt newfile/build_version_$(get-date -f MM-dd-yyyy)_$(get-date -f HH:mm:ss)/'
             echo 'We came to an end!'
         }
         success {
